@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051551631083",
+    "project_id": "login-ed63f",
+    "storage_bucket": "login-ed63f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051551631083:android:d83cc83441c29753dce0ae",
+        "android_client_info": {
+          "package_name": "com.tej.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051551631083-v79k90irsf603md9nn8r160kkkf3tirm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_484oiSQUQMaaM9DQ-eRIXsSWEPhdOwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051551631083-v79k90irsf603md9nn8r160kkkf3tirm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
