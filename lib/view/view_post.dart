@@ -74,7 +74,7 @@ class view_post extends StatelessWidget {
                       SizedBox(height: 20,),
                       Row(
                         children: [
-                          Text('DATE:  '+' '+date,style: TextStyle(
+                          Text('DATE & TIME:'+' '+date,style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontSize: 25,
                             color: Colors.black,
@@ -84,17 +84,17 @@ class view_post extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 20,),
-                      Row(
-                        children: [
-                          Text('TIME:  '+' '+time,style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            fontSize: 25,
-                            color: Colors.black,
-                          ),),
-
-
-                        ],
-                      ),
+                      // Row(
+                      //   children: [
+                      //     Text('TIME:  '+' '+time,style: TextStyle(
+                      //       fontWeight: FontWeight.normal,
+                      //       fontSize: 25,
+                      //       color: Colors.black,
+                      //     ),),
+                      //
+                      //
+                      //   ],
+                      // ),
                       SizedBox(height: 20,),
 
                     ],

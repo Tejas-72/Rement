@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:date_time_picker/date_time_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -109,60 +110,85 @@ class _add_techState extends State<add_tech> {
       ),
     );
 
-    final datefield = TextFormField(
-      autofocus: false,
+    final datefield=DateTimePicker(
       controller: dateController,
-      keyboardType: TextInputType.text,
-      validator: (value) {
-        if (value!.isEmpty) {
-          return ("please enter date");
+      type: DateTimePickerType.dateTimeSeparate,
+      dateMask: 'd MMM, yyyy',
+      initialValue: null,
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2100),
+      icon: Icon(Icons.event),
+      dateLabelText: 'Date',
+      timeLabelText: "Hour",
+      selectableDayPredicate: (date) {
+        // Disable weekend days to select from the calendar
+        if (date.weekday == 6 || date.weekday == 7) {
+          return false;
         }
 
+        return true;
+      },
+      onChanged: (val) => print(val),
+      validator: (val) {
+        print(val);
         return null;
       },
-
-      onSaved: (value) {
-        dateController.text = value!;
-      },
-      textInputAction: TextInputAction.next,
-      textAlign: TextAlign.justify,
-      decoration: InputDecoration(
-        prefixIcon: Icon(Icons.date_range),
-        contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-        hintText: "Date",
-
-        border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10)
-        ),
-      ),
+      onSaved: (val) => print(val),
     );
-    final timefield = TextFormField(
-      autofocus: false,
-      controller: timecontroller,
-      keyboardType: TextInputType.text,
-      validator: (value) {
-        if (value!.isEmpty) {
-          return ("please enter time");
-        }
+    // final datefield = TextFormField(
+    //   autofocus: false,
+    //   controller: dateController,
+    //   keyboardType: TextInputType.text,
+    //   validator: (value) {
+    //     if (value!.isEmpty) {
+    //       return ("please enter date");
+    //     }
+    //
+    //     return null;
+    //   },
+    //
+    //   onSaved: (value) {
+    //     dateController.text = value!;
+    //   },
+    //   textInputAction: TextInputAction.next,
+    //   textAlign: TextAlign.justify,
+    //   decoration: InputDecoration(
+    //     prefixIcon: Icon(Icons.date_range),
+    //     contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+    //     hintText: "Date",
+    //
+    //     border: OutlineInputBorder(
+    //         borderRadius: BorderRadius.circular(10)
+    //     ),
+    //   ),
+    // );
+    // final timefield = TextFormField(
+    //   autofocus: false,
+    //   controller: timecontroller,
+    //   keyboardType: TextInputType.text,
+    //   validator: (value) {
+    //     if (value!.isEmpty) {
+    //       return ("please enter time");
+    //     }
+    //
+    //     return null;
+    //   },
 
-        return null;
-      },
-
-      onSaved: (value) {
-        titleController.text = value!;
-      },
-      textInputAction: TextInputAction.next,
-      textAlign: TextAlign.justify,
-      decoration: InputDecoration(
-        prefixIcon: Icon(Icons.access_time),
-        contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-        hintText: "Date",
-
-        border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10)
-        ),
-      ),
-    );
+    //   onSaved: (value) {
+    //     titleController.text = value!;
+    //   },
+    //   textInputAction: TextInputAction.next,
+    //   textAlign: TextAlign.justify,
+    //   decoration: InputDecoration(
+    //     prefixIcon: Icon(Icons.access_time),
+    //     contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+    //     hintText: "Date",
+    //
+    //     border: OutlineInputBorder(
+    //         borderRadius: BorderRadius.circular(10)
+    //     ),
+    //   ),
+    // );
 
     final postbtn = Material(
 
@@ -177,7 +203,7 @@ class _add_techState extends State<add_tech> {
             .width,
         onPressed: () {
           int evid = random.nextInt(1000);
-          post_events("Technical", titleController.text, descController.text, venueController.text, dateController.text, timecontroller.text, evid.toString());
+          post_events("Cultural", titleController.text, descController.text, venueController.text, dateController.text, evid.toString());
         },
         child: Text('POST', textAlign: TextAlign.center, style: TextStyle(
           fontWeight: FontWeight.bold,
@@ -225,8 +251,7 @@ class _add_techState extends State<add_tech> {
                     SizedBox(height: 25),
                     datefield,
                     SizedBox(height: 25),
-                    timefield,
-                    SizedBox(height: 25),
+
                     postbtn,
 
 
@@ -240,7 +265,7 @@ class _add_techState extends State<add_tech> {
     );
   }
 
-  Future<void> post_events(String sub,String title,String desc,String ven,String date,String time, String eventid) async
+  Future<void> post_events(String sub,String title,String desc,String ven,String date, String eventid) async
   {
     CollectionReference events = FirebaseFirestore.instance.collection('events');
     FirebaseAuth auth =FirebaseAuth.instance;
@@ -250,7 +275,6 @@ class _add_techState extends State<add_tech> {
       "venue": ven,
       "desc": desc,
       "date": date,
-      "time": time,
       "eventid": eventid,
 
     }
