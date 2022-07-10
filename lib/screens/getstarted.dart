@@ -20,7 +20,7 @@ class getstarted extends StatelessWidget {
       const OnBoardModel(
         title: "REMENT",
         description: "Your academic data, your attendance, performance in tests, holidays, and other vital records are all at your disposal and just a click away from you. Access them from here!",
-        imgUrl: "assets/LOGO.png",
+        imgUrl: "assets/rem.jpg",
       ),
       const OnBoardModel(
         title: "TECHNICAL EVENTS",
@@ -31,7 +31,7 @@ class getstarted extends StatelessWidget {
         title: "CULTURAL EVENTS",
         description:
         "What better than attending cultural events with your friends and relaxing a bit from the academic life. Take part and watch these events unroll around the college campus and leap forward on the extracurriculars front with joy and happiness with your friends!",
-        imgUrl:  "assets/cult.png",
+        imgUrl:  "assets/cu.png",
       ),
       const OnBoardModel(
         title: "PLACEMENTS",
@@ -41,6 +41,7 @@ class getstarted extends StatelessWidget {
       ),
     ];
     return Scaffold(
+      backgroundColor: Color(0xffC8B6E2),
       body: OnBoard(
         pageController: _pageController,
         // Either Provide onSkip Callback or skipButton Widget to handle skip state
@@ -53,18 +54,20 @@ class getstarted extends StatelessWidget {
         },
         onBoardData: onBoardData,
         titleStyles: const TextStyle(
-          color: Colors.blue,
-          fontSize: 18,
+          color: Color(0xff371B58),
+          fontSize: 25,
           fontWeight: FontWeight.w900,
           letterSpacing: 0.15,
         ),
         descriptionStyles: TextStyle(
           fontSize: 16,
-            color: Colors.black,
+            color: Color(0xff371B58),
+
+
         ),
         pageIndicatorStyle: const PageIndicatorStyle(
           width: 100,
-          inactiveColor: Color(0xffC8B6E2),
+          inactiveColor:Color(0xffa983e5),
           activeColor: Color(0xff5B4B8A),
           inactiveSize: Size(8, 8),
           activeSize: Size(12, 12),

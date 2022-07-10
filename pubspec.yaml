@@ -77,6 +77,9 @@ flutter:
     - assets/landing.png
     - assets/LOGO.png
     - assets/others.png
+    - assets/eve.png
+    - assets/rem.jpg
+    - assets/cu.png
      
 
   # An image asset can refer to one or more resolution-specific "variants", see
