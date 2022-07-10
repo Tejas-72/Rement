@@ -55,7 +55,7 @@ class _view_othersState extends State<view_others> {
                             onTap: ()
                             {
                               //view post
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>view_post(title: snapshot.data!.docs[index]['title'], desc: snapshot.data!.docs[index]['desc'], venue: snapshot.data!.docs[index]['venue'], date: snapshot.data!.docs[index]['date'], time: snapshot.data!.docs[index]['time'])));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>view_post(title: snapshot.data!.docs[index]['title'], desc: snapshot.data!.docs[index]['desc'], venue: snapshot.data!.docs[index]['venue'], date: snapshot.data!.docs[index]['date'], )));
                             },
 //onTap: ,
 //onLongPress: ,

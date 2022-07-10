@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class view_post extends StatelessWidget {
 
-  final String title,desc,venue,date,time;
+  final String title,desc,venue,date;
 
-  view_post({required this.title,required this.desc,required this.venue,required this.date,required this.time});
+  view_post({required this.title,required this.desc,required this.venue,required this.date});
 
 
 

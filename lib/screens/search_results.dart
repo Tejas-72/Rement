@@ -32,6 +32,7 @@ class search_res extends StatelessWidget {
           stream:posts.snapshots(),
           builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
             if (!snapshot.hasData) return new Text("No events");
+            else if(!snapshot.hasData==false) return Text("No Results found",style: TextStyle(fontSize: 30),);
             return Center(
               child: Container(
                 child: ListView.builder(
@@ -51,7 +52,7 @@ class search_res extends StatelessWidget {
                             onTap: ()
                             {
                               //view post
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>view_post(title: snapshot.data!.docs[index]['title'], desc: snapshot.data!.docs[index]['desc'], venue: snapshot.data!.docs[index]['venue'], date: snapshot.data!.docs[index]['date'], time: snapshot.data!.docs[index]['time'])));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>view_post(title: snapshot.data!.docs[index]['title'], desc: snapshot.data!.docs[index]['desc'], venue: snapshot.data!.docs[index]['venue'], date: snapshot.data!.docs[index]['date'],)));
                             },
 //onTap: ,
 //onLongPress: ,
