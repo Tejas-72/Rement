@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+
 import '../view/view_post.dart';
 
 class search_res extends StatelessWidget {
@@ -31,8 +32,7 @@ class search_res extends StatelessWidget {
       body: StreamBuilder<QuerySnapshot>(
           stream:posts.snapshots(),
           builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-            if (!snapshot.hasData) return new Text("No events");
-            else if(!snapshot.hasData==false) return Text("No Results found",style: TextStyle(fontSize: 30),);
+            if (!snapshot.hasData) return new Text("Events");
             return Center(
               child: Container(
                 child: ListView.builder(
@@ -51,8 +51,10 @@ class search_res extends StatelessWidget {
                             selectedTileColor: Colors.amber,
                             onTap: ()
                             {
+
                               //view post
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>view_post(title: snapshot.data!.docs[index]['title'], desc: snapshot.data!.docs[index]['desc'], venue: snapshot.data!.docs[index]['venue'], date: snapshot.data!.docs[index]['date'],)));
+
                             },
 //onTap: ,
 //onLongPress: ,
@@ -66,6 +68,8 @@ class search_res extends StatelessWidget {
                 ),
               ),
             );
+
+
 
 
           }),

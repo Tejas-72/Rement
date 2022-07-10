@@ -203,7 +203,7 @@ class _add_techState extends State<add_tech> {
             .width,
         onPressed: () {
           int evid = random.nextInt(1000);
-          post_events("Cultural", titleController.text, descController.text, venueController.text, dateController.text, evid.toString());
+          post_events("Technical", titleController.text, descController.text, venueController.text, dateController.text, evid.toString());
         },
         child: Text('POST', textAlign: TextAlign.center, style: TextStyle(
           fontWeight: FontWeight.bold,

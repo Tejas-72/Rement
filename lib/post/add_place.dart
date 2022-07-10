@@ -203,7 +203,7 @@ class _add_placeState extends State<add_place> {
             .width,
         onPressed: () {
           int evid = random.nextInt(1000);
-          post_events("Cultural", titleController.text, descController.text, venueController.text, dateController.text, evid.toString());
+          post_events("Placements", titleController.text, descController.text, venueController.text, dateController.text, evid.toString());
         },
         child: Text('POST', textAlign: TextAlign.center, style: TextStyle(
           fontWeight: FontWeight.bold,
