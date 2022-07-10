@@ -4,12 +4,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login/screens/home.dart';
-import 'package:login/screens/home_screen.dart';
-import 'package:login/screens/home_screen_stud.dart';
+import 'package:login/notused/home_screen.dart';
+import 'package:login/notused/home_screen_stud.dart';
 import 'package:login/screens/home_stud.dart';
 import 'package:login/screens/login.dart';
 
-import 'package:login/screens/registration.dart';
+import 'package:login/notused/registration.dart';
 
 
 class loginscreenst extends StatefulWidget {

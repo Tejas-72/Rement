@@ -3,10 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:login/screens/home_stud.dart';
 import 'package:login/screens/search.dart';
-
-import 'Account.dart';
-import 'Tag.dart';
-import 'home.dart';
+import '../screens/home.dart';
 
 
 class homescreen_stud extends StatefulWidget {
@@ -29,8 +26,6 @@ class _homescreen_studState extends State<homescreen_stud> {
   final List<Widget> _children = [
     UsrHome_stud(),
     search(),
-    UsrTag(),
-    UsrAccount(),
 
   ];
   @override
@@ -45,7 +40,6 @@ class _homescreen_studState extends State<homescreen_stud> {
           BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search),label: 'Search'),
 
-          BottomNavigationBarItem(icon: Icon(Icons.person),label: 'Account'),
         ],
       ),
     );

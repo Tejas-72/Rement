@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login/models/user_model.dart';
-import 'package:login/screens/home_screen.dart';
+import 'package:login/notused/home_screen.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);

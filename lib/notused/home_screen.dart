@@ -3,9 +3,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:login/screens/search.dart';
 
-import 'Account.dart';
-import 'Tag.dart';
-import 'home.dart';
+
+import '../screens/home.dart';
 
 
 class homescreen extends StatefulWidget {
@@ -28,8 +27,8 @@ class _homescreen extends State<homescreen> {
   final List<Widget> _children = [
     UsrHome(),
     search(),
-    UsrTag(),
-    UsrAccount(),
+
+
 
   ];
   @override

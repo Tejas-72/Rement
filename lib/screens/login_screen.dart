@@ -4,9 +4,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login/screens/home.dart';
-import 'package:login/screens/home_screen.dart';
+import 'package:login/notused/home_screen.dart';
 
-import 'package:login/screens/registration.dart';
+import 'package:login/notused/registration.dart';
 
 class loginscreen extends StatefulWidget {
   const loginscreen({Key? key}) : super(key: key);
