@@ -12,14 +12,14 @@ class view_post extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'View Post',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xfff0e3fd)),
                 ),
               ]
           )

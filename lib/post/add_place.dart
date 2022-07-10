@@ -194,7 +194,7 @@ class _add_placeState extends State<add_place> {
 
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: Colors.redAccent,
+      color: Color(0xff371B58),
       child: MaterialButton(
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery
@@ -217,13 +217,13 @@ class _add_placeState extends State<add_place> {
     return  Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor:Color(0xff371B58),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Text(
               'Placements',
-              style:TextStyle(color: Colors.black),
+              style:TextStyle(color: Color(0xffecddfa)),
             ),
 
           ],

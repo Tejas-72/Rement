@@ -20,7 +20,7 @@ class getstarted extends StatelessWidget {
       const OnBoardModel(
         title: "REMENT",
         description: "Your academic data, your attendance, performance in tests, holidays, and other vital records are all at your disposal and just a click away from you. Access them from here!",
-        imgUrl: "assets/event.png",
+        imgUrl: "assets/LOGO.png",
       ),
       const OnBoardModel(
         title: "TECHNICAL EVENTS",
@@ -53,19 +53,19 @@ class getstarted extends StatelessWidget {
         },
         onBoardData: onBoardData,
         titleStyles: const TextStyle(
-          color: Colors.deepOrange,
+          color: Colors.blue,
           fontSize: 18,
           fontWeight: FontWeight.w900,
           letterSpacing: 0.15,
         ),
         descriptionStyles: TextStyle(
           fontSize: 16,
-          color: Colors.brown.shade300,
+            color: Colors.black,
         ),
         pageIndicatorStyle: const PageIndicatorStyle(
           width: 100,
-          inactiveColor: Colors.deepOrangeAccent,
-          activeColor: Colors.deepOrange,
+          inactiveColor: Color(0xffC8B6E2),
+          activeColor: Color(0xff5B4B8A),
           inactiveSize: Size(8, 8),
           activeSize: Size(12, 12),
         ),
@@ -77,7 +77,7 @@ class getstarted extends StatelessWidget {
           },
           child: const Text(
             "Skip",
-            style: TextStyle(color: Colors.deepOrangeAccent),
+            style: TextStyle(color: Color(0xff371B58),),
           ),
         ),
         // Either Provide onDone Callback or nextButton Widget to handle done state
@@ -97,7 +97,7 @@ class getstarted extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
                   gradient: const LinearGradient(
-                    colors: [Colors.redAccent, Colors.deepOrangeAccent],
+                    colors: [Color(0xff371B58),  Color(0xff4C3575),],
                   ),
                 ),
                 child: Text(

@@ -17,16 +17,16 @@ class _searchState extends State<search> {
     return Scaffold(
       appBar: AppBar(
           leading: BackButton(
-              color: Colors.black
+              color: Color(0xfff0e4ff)
           ),
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'Search',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xffefddff)),
                 ),
               ]
           )
@@ -72,10 +72,10 @@ class _searchState extends State<search> {
                         margin: EdgeInsets.only (left: 10),
                         padding: EdgeInsets.all(9),
                         decoration: BoxDecoration(
-                            color: Colors.teal,
+                            color: Color(0xff371B58),
                             borderRadius: BorderRadius.circular(15)
                         ),
-                        child: Icon(Icons.send),
+                        child: Icon(Icons.send,color: Color(0xfff0e0ff),),
                         width: 40
                     ),
                     ),

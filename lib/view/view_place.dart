@@ -23,14 +23,14 @@ class _view_placeState extends State<view_place>  {
 
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'Placements',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xffefe5ff)),
                 ),
               ]
           )

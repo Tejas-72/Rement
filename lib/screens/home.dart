@@ -18,19 +18,19 @@ class UsrHome extends StatelessWidget {
         floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
         floatingActionButton: FloatingActionButton(
         // isExtended: true,
-        child: Icon(Icons.add),
-    backgroundColor: Colors.blueGrey,
+        child: Icon(Icons.add,color: Color(0xffede4ff),),
+    backgroundColor:  Color(0xff5B4B8A),
     onPressed: () {
       Navigator.push(context, MaterialPageRoute(builder: (context) =>  add()));
 
 
     }),
-      backgroundColor: Colors.teal[100],
+      backgroundColor: Color(0xff7858A6),
       body:  CustomScrollView(
         slivers: [
           SliverAppBar(
 
-            backgroundColor: Colors.transparent,
+            backgroundColor: Color(0xff371B58),
             // leading: IconButton(
             //   icon: Icon(Icons.menu),
             //   onPressed: () {
@@ -46,9 +46,11 @@ class UsrHome extends StatelessWidget {
               //background: Image.asset('name'), could add an image also
               background:
               Container(
-                color: Colors.black12, //change if u want
+                color:Color(0xff371B58), //change if u want
               ),
-              title: Text('R E M E N T'),
+              title: Text('R E M E N T',style: TextStyle(
+                color: Color(0xffe3daff)
+              ),),
               centerTitle: true,
             ),
           ),
@@ -89,13 +91,13 @@ class UsrHome extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color:  Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -141,13 +143,13 @@ class UsrHome extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -193,13 +195,13 @@ class UsrHome extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color:Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -245,13 +247,13 @@ class UsrHome extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here

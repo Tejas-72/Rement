@@ -8,31 +8,40 @@ import 'package:login/view/view_others.dart';
 import 'package:login/view/view_place.dart';
 import 'package:login/view/view_tech.dart';
 import 'drawer.dart';
+import 'drawer_Stud.dart';
 class UsrHome_stud extends StatelessWidget {
   // const UsrHome ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context)  {
     return Scaffold(
-      backgroundColor: Colors.teal[100],
+
+      backgroundColor: Color(0xff7858A6),
       body:  CustomScrollView(
         slivers: [
           SliverAppBar(
-            backgroundColor: Colors.transparent,
+
+            backgroundColor: Color(0xff371B58),
             // leading: IconButton(
             //   icon: Icon(Icons.menu),
-            //   onPressed: () {},
+            //   onPressed: () {
+            //     MenuDrawer();
+            //   },
             // ),
             //title: Text('R E M E N T'),
             floating: true,
             pinned: true,
-            expandedHeight: 210,
+            expandedHeight: 250,
             flexibleSpace: FlexibleSpaceBar(
+
               //background: Image.asset('name'), could add an image also
-              background: Container(
-                color: Colors.black12, //change if u want
+              background:
+              Container(
+                color:Color(0xff371B58), //change if u want
               ),
-              title: Text('R E M E N T'),
+              title: Text('R E M E N T',style: TextStyle(
+                  color: Color(0xffe3daff)
+              ),),
               centerTitle: true,
             ),
           ),
@@ -73,13 +82,13 @@ class UsrHome_stud extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color:  Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -125,13 +134,13 @@ class UsrHome_stud extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -177,13 +186,13 @@ class UsrHome_stud extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color:Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -229,13 +238,13 @@ class UsrHome_stud extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 40,
                             // fontFamily: ,
-                            color: Colors.white
+                            color: Color(0xffe3daff)
                         ),),
                       ],
                     ),
                     height: 210,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Color(0xff4C3575),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(25.0),
                       //image: '', add asset image here
@@ -248,7 +257,7 @@ class UsrHome_stud extends StatelessWidget {
         ],
 
       ),
-      drawer: MenuDrawer(),
+      drawer: MenuDrawer_stud(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:login/screens/getstarted.dart';
 import 'package:login/screens/login_screen.dart';
 import 'package:login/screens/loginscreen_student.dart';
 
@@ -21,8 +22,8 @@ class login extends StatelessWidget {
           appBar: AppBar(
 
             leading: IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.black),
-              onPressed: () => Navigator.of(context).pop(),
+              icon: Icon(Icons.arrow_back, color: Color(0xffC8B6E2)),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>getstarted())),
             ),
             bottom:  TabBar(
               tabs: [
@@ -31,8 +32,10 @@ class login extends StatelessWidget {
 
               ],
             ), // TabBar
-            title: const Text('Rement'),
-            backgroundColor: Colors.redAccent,
+            title: const Text('Rement',style: TextStyle(
+              color: Color(0xffebe7f5),
+            ),),
+            backgroundColor:Color(0xff371B58),
           ), // AppBar
           body: const TabBarView(
             children: [

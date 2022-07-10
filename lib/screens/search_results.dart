@@ -15,14 +15,14 @@ class search_res extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'Search Results',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xffe0ddff)),
                 ),
               ]
           )

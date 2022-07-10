@@ -19,14 +19,14 @@ class _view_cultState extends State<view_cult> {
 
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'Cultural',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xffefe5ff)),
                 ),
               ]
           )

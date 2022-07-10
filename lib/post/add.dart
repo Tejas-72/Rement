@@ -30,13 +30,13 @@ class _addState extends State<add> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor: Color(0xff371B58),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
           const Text(
           'Post',
-          style:TextStyle(color: Colors.black),
+          style:TextStyle(color: Color(0xfff1e3ff)),
         ),
 
       ],
@@ -72,7 +72,7 @@ class _addState extends State<add> {
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
 
-                                    color: Colors.redAccent,
+                                    color: Color(0xffa385db),
 
                                   ),
                                   child:Column(
@@ -82,6 +82,7 @@ class _addState extends State<add> {
                                       Text('P',style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
+                                        color: Color(0xffe3dafd)
                                       ),),
 
                                     ],
@@ -116,7 +117,7 @@ class _addState extends State<add> {
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
 
-                                    color: Colors.redAccent,
+                                    color:  Color(0xff472371),
 
                                   ),
                                   child:Column(
@@ -126,6 +127,7 @@ class _addState extends State<add> {
                                       Text('C',style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
+                                        color:  Color(0xffe3dafd)
                                       ),),
 
                                     ],
@@ -159,7 +161,7 @@ class _addState extends State<add> {
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
 
-                                    color: Colors.redAccent,
+                                    color:Color(0xffe3dafd),
 
                                   ),
                                   child:Column(
@@ -169,6 +171,7 @@ class _addState extends State<add> {
                                       Text('T',style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
+                                        color:  Color(0xff371B58)
                                       ),),
 
                                     ],
@@ -202,7 +205,7 @@ class _addState extends State<add> {
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
 
-                                    color: Colors.redAccent,
+                                    color: Color(0xff45356d),
 
                                   ),
                                   child:Column(
@@ -212,6 +215,7 @@ class _addState extends State<add> {
                                       Text('O',style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
+                                        color: Color(0xffe3dafd)
                                       ),),
 
                                     ],

@@ -19,14 +19,14 @@ class _view_othersState extends State<view_others> {
 
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff371B58),
           elevation: 0,
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(
                   'Academics/Others',
-                  style:TextStyle(color: Colors.black),
+                  style:TextStyle(color: Color(0xffefe5ff)),
                 ),
               ]
           )
