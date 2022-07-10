@@ -33,6 +33,7 @@ class search_res extends StatelessWidget {
           stream:posts.snapshots(),
           builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
             if (!snapshot.hasData) return new Text("Events");
+            // else if (!snapshot.hasData==null) return new Text("No Search results");
             return Center(
               child: Container(
                 child: ListView.builder(
